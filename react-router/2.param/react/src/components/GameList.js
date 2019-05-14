@@ -10,21 +10,21 @@ export default class GameList extends Component{
         };
     }
 
-async componentDidMount(){
-    try{
-        let res=await fetch('/api/game_list');
-        let {err, data}=await res.json();
-        if(err){
+    async componentDidMount(){
+        try{
+            let res=await fetch('/api/game_list');
+            let {err, data}=await res.json();
+            if(err){
+                alert('请求失败，请刷新重试')
+            }else{
+                this.setState({
+                    game_arr: data
+                })
+            }
+        }catch(e){
             alert('请求失败，请刷新重试')
-        }else{
-            this.setState({
-                game_arr: data
-            })
         }
-    }catch(e){
-        alert('请求失败，请刷新重试')
     }
-}
 
     render(){
         return (
