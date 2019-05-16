@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Index extends Component{
+export default class Icecream extends Component{
     constructor(...args){
         super(...args);
     }
@@ -8,7 +8,7 @@ export default class Index extends Component{
     render(){
         return (
             <div>
-                首页
+                冰激凌
             </div>
         );
     }

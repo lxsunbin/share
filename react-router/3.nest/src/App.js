@@ -5,6 +5,8 @@ import Index from './components/Index';
 import Game from './components/Game';
 import Food from './components/Food';
 
+import './App.css';
+
 class App extends Component{
     constructor(...args){
         super(...args);

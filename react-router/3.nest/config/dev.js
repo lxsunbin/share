@@ -13,7 +13,7 @@ module.exports={
     port: 3000,
     open: true,
     disableHostCheck: true,
-    // historyApiFallback: true
+    historyApiFallback: true
   },
   plugins: [
     ...stylelintPlugin,
