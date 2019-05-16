@@ -50,5 +50,5 @@ export default class Game extends Component{
 
     // shouldComponentUpdate(nextProps, nextState){
     //     //props变了 || state变了
-    //     return nextProps.match.params.id!=this.props.match.params.id || this.state.info.id!=nextState.info.id
+    //     return this.props.match.params.id!=nextProps.match.params.id || this.state.info.id!=nextState.info.id
     // }
