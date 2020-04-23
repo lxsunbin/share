@@ -15,7 +15,7 @@ http.createServer(function (request, response) {
 	if (request.url === '/script.js') {
 		response.writeHead(200, {
 			'Content-Type': 'text/javascript',
-	        'Cache-Control': 'max-age=5'
+	        'Cache-Control': 'max-age=10'
 		});
 		response.end('console.log("script loaded")');
 	}
